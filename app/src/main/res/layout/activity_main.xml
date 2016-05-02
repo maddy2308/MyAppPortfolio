@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nanodegree.android.udacity.myappportfolio.MainActivity">
+
+    <TextView
+        android:id="@+id/heading_text_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="20sp"
+        android:text="@string/heading"/>
+
+    <Button
+        android:id="@+id/popular_movies_button_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/heading_text_view"
+        android:layout_marginBottom="4dp"
+        android:background="#2E3D49"
+        android:textColor="#fff"
+        android:onClick="showToastMessage"
+        android:text="@string/popularMoviesApp"/>
+
+    <Button
+        android:id="@+id/stock_hawk_button_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/popular_movies_button_view"
+        android:layout_marginBottom="4dp"
+        android:background="#2E3D49"
+        android:textColor="#fff"
+        android:onClick="showToastMessage"
+        android:text="@string/stockHawkApp"/>
+
+    <Button
+        android:id="@+id/build_it_bigger_button_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/stock_hawk_button_view"
+        android:layout_marginBottom="4dp"
+        android:background="#2E3D49"
+        android:textColor="#fff"
+        android:onClick="showToastMessage"
+        android:text="@string/buildItBiggerApp"/>
+
+    <Button
+        android:id="@+id/make_material_button_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/build_it_bigger_button_view"
+        android:layout_marginBottom="4dp"
+        android:background="#2E3D49"
+        android:textColor="#fff"
+        android:onClick="showToastMessage"
+        android:text="@string/makeYourAppMaterial"/>
+
+    <Button
+        android:id="@+id/go_ubiquitous_button_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/make_material_button_view"
+        android:layout_marginBottom="4dp"
+        android:background="#2E3D49"
+        android:textColor="#fff"
+        android:onClick="showToastMessage"
+        android:text="@string/goUbiquitousApp"/>
+
+    <Button
+        android:id="@+id/capstone_button_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/go_ubiquitous_button_view"
+        android:layout_marginBottom="4dp"
+        android:background="#2E3D49"
+        android:textColor="#fff"
+        android:onClick="showToastMessage"
+        android:text="@string/capstoneApp"/>
+
+
+</RelativeLayout>
