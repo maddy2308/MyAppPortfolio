@@ -10,6 +10,9 @@ import retrofit2.http.Query;
 
 public interface TheMovieDbDAO {
 
-  @GET("discover/movie")
-  Call<ResultPage> discoverMovies(@Query("api_key") String apiKey, @Query("sort_by") String sortBy);
+  @GET("movie/popular")
+  Call<ResultPage> discoverPopularMovies(@Query("api_key") String apiKey);
+
+  @GET("movie/top_rated")
+  Call<ResultPage> discoverTopRatedMovies(@Query("api_key") String apiKey);
 }
