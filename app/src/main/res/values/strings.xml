@@ -7,4 +7,13 @@
     <string name="goUbiquitousApp">Go Ubiquitous</string>
     <string name="capstoneApp">Capstone</string>
     <string name="heading">My Nanodegree Apps!</string>
+    <string name="title_activity_list_movies">ListMovies</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_movie_fetch_key">Movie Ordering Preference</string>
+    <string name="pref_movie_ordering">Movie Ordering Preference</string>
+    <string name="pref_movie_popularity_label">Pupularity (Descending)</string>
+    <string name="pref_movie_rating_label">Rating (Descending)</string>
+    <string name="pref_movie_popularity">popularity.desc</string>
+    <string name="pref_movie_rating">vote_average.desc</string>
+    <string name="title_activity_movie_detail">Movie Detail</string>
 </resources>
