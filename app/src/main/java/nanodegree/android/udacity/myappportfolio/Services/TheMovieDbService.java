@@ -37,7 +37,12 @@ public class TheMovieDbService {
 
     // vote_average.desc
     // popularity.desc
-    Call<ResultPage> call = theMovieDbDAO.discoverMovies(BuildConfig.MY_MOVIE_DB_API_KEY, preference);
+    Call<ResultPage> call;
+    if (preference.toLowerCase().equals("popularity")) {
+      call = theMovieDbDAO.discoverPopularMovies(BuildConfig.MY_MOVIE_DB_API_KEY);
+    } else {
+      call = theMovieDbDAO.discoverTopRatedMovies(BuildConfig.MY_MOVIE_DB_API_KEY);
+    }
     Response<ResultPage> response = call.execute();
     Log.d(LOG_TAG, String.valueOf(response.body()));
     return response.body();
