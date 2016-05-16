@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
   public void showToastMessage(View view) {
 
     if (view.getId() == R.id.popular_movies_button_view) {
-      Intent popularMoviesIntent = new Intent(this, PopularMovies.class);
+      Intent popularMoviesIntent = new Intent(this, MovieListActivity.class);
       //popularMoviesIntent.setData(Uri.parse(fileUrl));
       startActivity(popularMoviesIntent);
     } else {

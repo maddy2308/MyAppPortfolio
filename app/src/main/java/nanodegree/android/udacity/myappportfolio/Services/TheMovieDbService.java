@@ -33,11 +33,11 @@ public class TheMovieDbService {
 
   private TheMovieDbDAO theMovieDbDAO = retrofit.create(TheMovieDbDAO.class);
 
-  public ResultPage getMovies() throws IOException {
+  public ResultPage getMovies(String preference) throws IOException {
 
     // vote_average.desc
     // popularity.desc
-    Call<ResultPage> call = theMovieDbDAO.discoverMovies(BuildConfig.MY_MOVIE_DB_API_KEY, "popularity.desc");
+    Call<ResultPage> call = theMovieDbDAO.discoverMovies(BuildConfig.MY_MOVIE_DB_API_KEY, preference);
     Response<ResultPage> response = call.execute();
     Log.d(LOG_TAG, String.valueOf(response.body()));
     return response.body();

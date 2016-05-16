@@ -18,15 +18,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PopularMovies"
-            android:label="@string/title_activity_popular_movies"
+            android:name=".MovieListActivity"
+            android:label="@string/title_activity_list_movies"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nanodegree.android.udacity.myappportfolio.MainActivity"/>
         </activity>
-        <activity android:name=".MovieDetail">
+        <activity
+            android:name=".MovieDetailActivity"
+            android:label="@string/title_activity_movie_detail"
+            android:parentActivityName=".MovieListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nanodegree.android.udacity.myappportfolio.MovieListActivity"/>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".MovieListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nanodegree.android.udacity.myappportfolio.MovieListActivity" />
         </activity>
     </application>
 

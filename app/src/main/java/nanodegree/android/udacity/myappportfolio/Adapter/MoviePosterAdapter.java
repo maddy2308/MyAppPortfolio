@@ -15,7 +15,7 @@ import java.util.List;
 
 import nanodegree.android.udacity.myappportfolio.BuildConfig;
 import nanodegree.android.udacity.myappportfolio.Model.Movie;
-import nanodegree.android.udacity.myappportfolio.MovieDetail;
+import nanodegree.android.udacity.myappportfolio.MovieDetailActivity;
 import nanodegree.android.udacity.myappportfolio.R;
 
 public class MoviePosterAdapter extends ArrayAdapter<Movie> {
@@ -51,7 +51,7 @@ public class MoviePosterAdapter extends ArrayAdapter<Movie> {
     convertView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent movieDetailIntent = new Intent(getContext(), MovieDetail.class);
+        Intent movieDetailIntent = new Intent(getContext(), MovieDetailActivity.class);
         movieDetailIntent.putExtra(MOVIE_TITLE_CLICKED, (Serializable) movie);
         getContext().startActivity(movieDetailIntent);
       }
